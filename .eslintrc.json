@@ -1,0 +1,179 @@
+{
+    "env": { "browser": true, "commonjs": true, "es6": true },
+    "extends": [
+        "eslint:recommended",
+        "airbnb-base",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "next",
+        "plugin:@next/next/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "plugins": ["prettier"],
+    "overrides": [],
+    "parserOptions": { "ecmaVersion": "latest" },
+    "rules": {
+        "no-shadow": ["off"],
+        "no-console": ["warn"],
+        "comma-dangle": ["warn"],
+        "consistent-return": ["off"],
+        "no-unused-vars": ["warn"],
+        "linebreak-style": ["off"],
+        "no-return-await": ["off"],
+        "no-return-assign": ["off"],
+        "no-await-in-loop": ["off"],
+        "semi": ["error", "always"],
+        "no-self-compare": ["error"],
+        "object-curly-newline": ["off"],
+        "radix": ["error", "as-needed"],
+        "arrow-parens": ["off", "as-needed"],
+        "no-template-curly-in-string": ["warn"],
+        "no-unmodified-loop-condition": ["warn"],
+        "computed-property-spacing": ["warn", "never"],
+        "implicit-arrow-linebreak": ["error", "beside"],
+        "keyword-spacing": [
+            "error",
+            {
+                "before": true
+            }
+        ],
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ],
+        "arrow-spacing": [
+            "warn",
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "brace-style": [
+            "warn",
+            "1tbs",
+            {
+                "allowSingleLine": true
+            }
+        ],
+        "comma-spacing": [
+            "warn",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "no-plusplus": [
+            "error",
+            {
+                "allowForLoopAfterthoughts": true
+            }
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxBOF": 1
+            }
+        ],
+        "quotes": [
+            "error",
+            "double",
+            {
+                "allowTemplateLiterals": true
+            }
+        ],
+        "no-underscore-dangle": [
+            "error",
+            {
+                "allow": ["_id", "__leadoBaseDir", "__v"]
+            }
+        ],
+        "operator-linebreak": [
+            1,
+            "after",
+            {
+                "overrides": { "=": "after", "?": "before", ":": "before" }
+            }
+        ],
+        "no-multi-spaces": [
+            "warn",
+            {
+                "ignoreEOLComments": true,
+                "exceptions": { "BinaryExpression": true }
+            }
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 150,
+                "tabWidth": 4,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true
+            }
+        ],
+        "camelcase": [
+            "error",
+            {
+                "properties": "never",
+                "ignoreDestructuring": true,
+                "ignoreImports": true,
+                "ignoreGlobals": true
+            }
+        ],
+        "no-irregular-whitespace": [
+            "warn",
+            {
+                "skipStrings": true,
+                "skipComments": true,
+                "skipTemplates": true,
+                "skipRegExps": true
+            }
+        ],
+        "padding-line-between-statements": [
+            "error",
+            {
+                "blankLine": "always",
+                "prev": ["const", "let", "if"],
+                "next": "*"
+            },
+            {
+                "blankLine": "any",
+                "prev": ["const", "let"],
+                "next": ["const", "let"]
+            },
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": ["return"]
+            }
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1,
+                "outerIIFEBody": "off",
+                "MemberExpression": 1,
+                "FunctionDeclaration": { "parameters": "first" },
+                "CallExpression": { "arguments": 1 },
+                "ArrayExpression": 1,
+                "ObjectExpression": 1,
+                "ImportDeclaration": 1,
+                "flatTernaryExpressions": false,
+                "offsetTernaryExpressions": true,
+                "ignoreComments": true
+            }
+        ]
+    },
+    "globals": {
+        "Log": false,
+        "Logger": false
+    },
+    "settings": {
+        "next": {
+            "rootDir": "garden-five/"
+        }
+    }
+}

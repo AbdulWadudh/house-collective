@@ -1,0 +1,26 @@
+{
+  "name": "house-collective",
+  "version": "1.0.0",
+  "description": "Simple Web Application to Learn Things(IDK)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-personal:AbdulWadudh/house-collective.git"
+  },
+  "author": "Abdul Wadudh",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-next": "^0.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.3"
+  }
+}

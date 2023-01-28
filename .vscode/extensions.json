@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "vivaxy.vscode-conventional-commits",
+        "esbenp.prettier-vscode",
+        "sburg.vscode-javascript-booster",
+        "bradlc.vscode-tailwindcss",
+        "styled-components.vscode-styled-components",
+        "chamboug.js-auto-backticks",
+        "wix.glean"
+    ]
+}
